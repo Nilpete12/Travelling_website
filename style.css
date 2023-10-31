@@ -1,0 +1,311 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*navigation*/
+.navigation {
+    display: flex;
+    padding-left: 225px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navi-bar li {
+    list-style: none;
+    display: inline-block;
+
+    font-size: 1.5vw;
+    padding-left: 44px;
+}
+
+.navi-bar li a {
+    text-decoration: none;
+    color: white
+}
+
+/*main content*/
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+#home::before {
+    content: "";
+    background-image: url(background.jpg);
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* utility classes */
+.heading {
+    font-size: 3rem;
+    color: white;
+}
+
+#home p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#home form input {
+    padding-left: 114px;
+    padding-right: 114px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.heading1 {
+    font-size: 3rem;
+    color: black;
+    margin-top: 120px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.heading2 {
+    font-size: 3rem;
+    color: white;
+    margin-top: 140px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+#intro img {
+    padding-left: 79px;
+    z-index: -1;
+}
+
+#intro img:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#intro {
+    background-color: whitesmoke;
+    padding-bottom: 95px;
+}
+
+.about1 {
+    display: inline-block;
+    margin-top: 320px;
+    justify-content: space-around;
+}
+
+.about1 h2 {
+    font-size: 2.3rem;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.about1 p {
+    margin-left: 100px;
+    font-size: 1.4rem;
+}
+
+.about1 img {
+    margin-left: 840px;
+    margin-top: -180px;
+}
+
+#intro1::before {
+    content: "";
+    background-image: url(maldives.jpg);
+
+    z-index: -1;
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#intro1 p {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-left: 280px;
+    padding-right: 180px;
+}
+
+#intro1 button {
+    background-color: rgb(21, 125, 211);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    margin-left: 40%;
+}
+
+#intro1 button:hover {
+    background-color: rgb(51, 140, 213);
+    cursor: pointer;
+}
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.headd {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.headd h1 {
+    font-size: 3rem;
+}
+
+.headd p {
+    font-size: 1.3rem;
+}
+
+.headd p a {
+    text-decoration: underline;
+    color: rgb(21, 125, 211);
+}
+
+.headd p a:hover {
+    color: rgb(69, 157, 230);
+}
+
+
+.subcont1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.subcont1 p:hover {
+    color: rgb(69, 157, 230);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.subcont1 img {
+    cursor: pointer;
+}
+
+.subcont1 p {
+    font-size: 1.3rem;
+    padding-left: 8px;
+}
+
+.subcont2 img {
+    cursor: pointer;
+}
+
+.subcont2 p {
+    font-size: 1.3rem;
+    padding-left: 8px;
+}
+
+.subcont2 p:hover {
+    color: rgb(69, 157, 230);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.subcont2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#last::before {
+    content: "";
+    background-image: url(night-mountain.jpg);
+
+    z-index: -1;
+    height: 107%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#last h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+#last p {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+#last h1 span {
+    color: rgb(21, 125, 211);
+    ;
+}
+
+#last p span {
+    color: rgb(21, 125, 211);
+}
+
+#lastone {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#lastone button {
+    font-size: 1.3rem;
+    background-color: rgb(21, 125, 211);
+    color: white;
+    padding: 4px 130px;
+}
+#lastone button:hover{ background-color: rgb(50, 50, 50);
+    cursor: pointer;
+    transition-duration: 0.3s;
+ 
+}
+
+#lastone form input {
+    font-size: 1.3rem;
+    padding: 3.5px 40px;
+    margin-right: 50px;
+}
+
+.ns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.op p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    width: 80%;
+}
+
+.rp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rps:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
