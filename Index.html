@@ -12,37 +12,55 @@
     <header>
         <div class="navigation">
             <ul class="navi-bar">
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">DESTINATION</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EXPLORE</a></li>
-                <li><a href="#">PLAN A TRIP</a></li>
-                <li><a href="#">SEARCH</a></li>
+                <li><a  class="remm" href="#intro">DESTINATION</a></li>
+                <li><a class="remm"  href="#about">ABOUT</a></li>
+                <li><a  class="remm" href="#">EXPLORE</a></li>
+                <li><a class="remm"  href="#intro1">PLAN A TRIP</a></li>
+                <li><a  class="remm" href="#">SEARCH</a></li>
+                <button><a class="rem" href="login.html">Sign-In</a></button>
             </ul>
         </div>
     </header>
     <section id="home">
         <h1 class="heading">Travelmate</h1>
         <p>Inspiring Guides To The Best Adventure Travel Destination </p>
-        <p> Your Traveling Partener TravelMate</p>
+        <p> Your Traveling Partener TravelMate !</p>
         <form><input type="text" placeholder="Search Travel Mate"></form>
     </section>
     <section id="about">
         <div class="about1">
+            
             <h2>Adventure Travel Guides</h2>
             <p id="uis">Get off the beaten path and explore the best hiking trails, <br>remote beaches, hidden
                 waterfalls, secluded islands, & <br>mountain trekking routes.</p>
-            <img src="mountain.jpg" height="400" width="500">
+        </div>
+        <div class="about2">
+                <img src="mountain.jpg" height="400" width="500">
         </div>
 
     </section>
 
     <section id="intro">
-        <h1 class="heading1">FEATURED DESTINATION</h1>
-        <img src="malta.jpg" height="450" width="258.25">
-        <img src="australia.jpg" height="450" width="258.25">
-        <img src="seychelles.jpg" height="450" width="258.25">
-        <img src="india.jpg" height="450" width="258.25">
+        <h1 class="heading1">FEATURED DESTINATIONS</h1>
+        <ul id="fig">
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Gozo"  target="_blank">
+                <img src="malta.jpg" height="450" width="258.25"><figcaption class="fig1">Malta</figcaption>
+                </a>
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Freycinet_National_Park" target="_blank">
+                <img src="australia.jpg" height="450" width="258.25"><figcaption class="fig1">Australia</figcaption>
+                </a>
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Mah%C3%A9,_Seychelles" target="_blank">
+                <img src="seychelles.jpg" height="450" width="258.25"><figcaption class="fig1"> Seychelles</figcaption>
+                </a>
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank">
+            <img src="india.jpg" height="450" width="258.25"><figcaption class="fig1">India</figcaption>
+            </a>
+            </li>
+        </ul>
     </section>
     <section id="intro1">
         <h1 class="heading2">PlAN WHERE TO STAY</h1>
@@ -94,7 +112,7 @@
                 travel tips,<br> destination guides, & travel photography content directly to your inbox.</p>
             <div id="lastone">
                 <form><input type="text" placeholder="Your Email Address"></form>
-                <button>Send</button>
+                <button onclick="submt()">Send</button>
             </div>
         </div>
         <div class="ns">
@@ -139,6 +157,9 @@
             <p class="rps">Privacy Policy & Disclosures | Terms & Conditions</p>
         </div>
     </section>
+    <script>
+        function submt(){alert("Successfully sent")}
+    </script>
 </body>
 
 </html>
